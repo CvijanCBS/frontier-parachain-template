@@ -29,7 +29,17 @@ cargo build --release
 ### 🕸️ Run a local network
  You will need a compatible release of [Polkadot](https://github.com/paritytech/polkadot-sdk) to run a local network. You may also want to use [Zombienet](https://github.com/paritytech/zombienet/releases) (available for Linux and MacOS),  for spinning up a full fledged relay chain - parachain environment. You can find more information about running a local test network [HERE](./docs/zombienet.md)
 
+ #### Setup
 
+ Download polkadot and put it in bin directory
+
+ Copy frontier-parachain-node from target/release/. to bin direcotry
+
+ Run:
+
+ ```bash
+ zombienet spawn zombienet-config.toml -p native
+ ```
 
 👉 Learn more about parachains [here](https://wiki.polkadot.network/docs/learn-parachains), and parathreads [here](https://wiki.polkadot.network/docs/learn-parathreads).
 
